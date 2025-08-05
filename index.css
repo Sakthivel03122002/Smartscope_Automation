@@ -61,7 +61,7 @@
 
     @media (max-width: 768px) {
       ul.nav-menu {
-        display: flex; /* You can add a mobile toggle later */
+        display: none; /* You can add a mobile toggle later */
       }
     }
 
@@ -573,6 +573,7 @@
   }
 
 }
+
 
 
 
