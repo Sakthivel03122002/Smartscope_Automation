@@ -61,12 +61,12 @@
 
     @media (max-width: 768px) {
       ul.nav-menu {
-        display: none; /* You can add a mobile toggle later */
+        display: flex; /* You can add a mobile toggle later */
       }
     }
 
     #home{
-      background-image: url("/img/home 3.jpg");
+      background-image: url("./img/home 3.jpg");
       background-size: cover;
       background-position: center;
       height: 600px;
@@ -571,4 +571,5 @@
   .footer-right {
     font-size: 14px;
   }
+
 }
