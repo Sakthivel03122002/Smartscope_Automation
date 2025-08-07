@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smartscope Automation</title>
   <link rel="stylesheet" href="index.css">
+  <link href="img/favicon.ico" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -344,6 +347,11 @@
     </div>
   </section>
 
+  
+  <a href="#" class="back-to-top" title="Back to top">
+    <i class="fa-sharp-duotone fa-solid fa-jet-fighter-up fa-bounce fa-xl"></i>
+  </a>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.querySelector('.contact-form');
@@ -387,12 +395,43 @@
         navToggle.addEventListener('click', function () {
           navMenu.classList.toggle('active');
         });
+        // Hide menu when any nav link is clicked (on mobile)
+        navMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (window.innerWidth <= 930) {
+              navMenu.classList.remove('active');
+            }
+          });
+        });
       }
     });
+
+    
+
+    // Show/hide button on scroll
+    window.onscroll = function () {
+      const btn = document.querySelector(".back-to-top");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Scroll to top on click
+    document.querySelector(".back-to-top").addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
   </script>
 
 
 </body>
 
 </html>
+
 
