@@ -726,32 +726,4 @@ ul.nav-menu li a:hover {
 }
 
 
-.back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
-  background-color: #FF6600;
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 30px;
-  text-align: center;
-  line-height: 60px;
-  z-index: 999;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 12px rgb(255, 255, 255);
-}
-
-.back-to-top:hover {
-  background-color: #fb000d;
-  transform: scale(1.1);
-}
-
-.back-to-top i {
-  pointer-events: none; /* ensure icon doesn’t block click */
-}
-
-
 
